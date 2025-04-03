@@ -157,11 +157,9 @@
     <ClCompile Include="float_panel.cpp" />
     <ClCompile Include="font.cpp" />
     <ClCompile Include="fpn_about.cpp" />
-    <ClCompile Include="fpn_cmd.cpp" />
     <ClCompile Include="fpn_col.cpp" />
     <ClCompile Include="fpn_global.cpp" />
     <ClCompile Include="fpn_lang.cpp" />
-    <ClCompile Include="fpn_par.cpp" />
     <ClCompile Include="ft_constant.cpp" />
     <ClCompile Include="geo.cpp" />
     <ClCompile Include="label.cpp" />
@@ -214,11 +212,9 @@
     <ClInclude Include="float_panel.h" />
     <ClInclude Include="font.h" />
     <ClInclude Include="fpn_about.h" />
-    <ClInclude Include="fpn_cmd.h" />
     <ClInclude Include="fpn_col.h" />
     <ClInclude Include="fpn_global.h" />
     <ClInclude Include="fpn_lang.h" />
-    <ClInclude Include="fpn_par.h" />
     <ClInclude Include="geo.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="label.h" />

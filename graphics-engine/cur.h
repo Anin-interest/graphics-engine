@@ -23,7 +23,6 @@ struct Cur : App {
 	ptr<Bgr> bgr;
 
 	double vol = 1;
-	bool mute = false;
 	bool paint = false;
 	bool render_smooth = false;
 	col3 color;

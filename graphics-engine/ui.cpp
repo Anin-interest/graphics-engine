@@ -2,9 +2,7 @@
 #include "cur.h"
 #include "float_panel.h"
 #include "fpn_global.h"
-#include "fpn_par.h"
 #include "fpn_col.h"
-#include "fpn_cmd.h"
 #include "fpn_lang.h"
 #include "fpn_about.h"
 #include "pn_menu.h"
@@ -16,8 +14,6 @@
 void UI::sort_fpns() { sort(fpns.begin(), fpns.end(), less_fpn); }
 void UI::Init(Cur& cur) {
 	mkfp(fpn_global);
-	mkfp(fpn_cmd);
-	mkfp(fpn_par);
 	mkfp(fpn_lang);
 	mkfp(fpn_about);
 	mkfp(fpn_col);

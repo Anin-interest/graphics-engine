@@ -142,16 +142,10 @@
     <ClCompile Include="fpn_about.cpp">
       <Filter>current\ui</Filter>
     </ClCompile>
-    <ClCompile Include="fpn_cmd.cpp">
-      <Filter>current\ui</Filter>
-    </ClCompile>
     <ClCompile Include="fpn_global.cpp">
       <Filter>current\ui</Filter>
     </ClCompile>
     <ClCompile Include="fpn_lang.cpp">
-      <Filter>current\ui</Filter>
-    </ClCompile>
-    <ClCompile Include="fpn_par.cpp">
       <Filter>current\ui</Filter>
     </ClCompile>
     <ClCompile Include="pn_bottom.cpp">
@@ -309,16 +303,10 @@
     <ClInclude Include="fpn_about.h">
       <Filter>current\ui</Filter>
     </ClInclude>
-    <ClInclude Include="fpn_cmd.h">
-      <Filter>current\ui</Filter>
-    </ClInclude>
     <ClInclude Include="fpn_global.h">
       <Filter>current\ui</Filter>
     </ClInclude>
     <ClInclude Include="fpn_lang.h">
-      <Filter>current\ui</Filter>
-    </ClInclude>
-    <ClInclude Include="fpn_par.h">
       <Filter>current\ui</Filter>
     </ClInclude>
     <ClInclude Include="pn_bottom.h">

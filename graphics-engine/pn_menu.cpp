@@ -4,8 +4,6 @@
 #include "tool.h"
 #include "fpn_global.h"
 #include "fpn_col.h"
-#include "fpn_cmd.h"
-#include "fpn_par.h"
 #include "fpn_lang.h"
 #include "fpn_about.h"
 
@@ -13,12 +11,6 @@
 #include "my_def.h"
 #define mkbt(nm) mkp(bt_##nm)(&*ui.fpn_##nm);
 
-BtMute::BtMute() : Button(150) {}
-void BtMute::Update(App& app) {
-	txt = cur.mute ? loc(L"unmute") : loc(L"mute");
-	Button::Update(app);
-}
-void BtMute::OnClick(App& app) { cur.mute = !cur.mute; }
 BtMainMenu::BtMainMenu() : BtLan(150, L"bt_main_menu") {}
 void BtMainMenu::OnClick(App& app) {
 	ui.pn_menu->set_c(app, &*ui.pn_menu->cly_main);
@@ -189,15 +181,12 @@ void BtKnife::OnClick(App& app) {
 
 PnMenu::PnMenu(App& app) : Panel(Panel::menu(app)) {
 	vector<Control*> tmp;
-	mkp(bt_mute)();
 	mkbt(global);
 	mkp(bt_mode)(); mkp(bt_tool)();
-	mkbt(cmd); mkbt(par);
 	mkbt(lang); mkbt(about);
 	tmp = { 
-		&*bt_mute,
 		&*bt_global, &*bt_mode, &*bt_tool,
-		&*bt_cmd, &*bt_par, &*bt_lang, &*bt_about 
+		&*bt_lang, &*bt_about 
 	};
 	mkcl(cly_main);
 	mkp(bt_main_menu)(); 

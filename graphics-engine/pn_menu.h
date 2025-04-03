@@ -3,11 +3,6 @@
 #include "button.h"
 #include "ctrl_list.h"
 
-struct BtMute : Button {
-	BtMute();
-	void Update(App& app) override;
-	void OnClick(App& app) override;
-};
 struct BtMainMenu : BtLan {
 	BtMainMenu();
 	void OnClick(App& app) override;
@@ -93,11 +88,9 @@ struct BtKnife : BtLan {
 };
 
 struct PnMenu : Panel {
-	ptr<BtMute> bt_mute;
 	ptr<BtFPn> bt_global;
 	ptr<BtMode> bt_mode;
 	ptr<BtTool> bt_tool;
-	ptr<BtFPn> bt_cmd;
 	ptr<BtFPn> bt_par;
 	ptr<BtFPn> bt_lang;
 	ptr<BtFPn> bt_about;

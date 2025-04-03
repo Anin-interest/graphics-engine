@@ -4,8 +4,6 @@
 struct Cur;
 struct FloatPanel;
 struct FPnGlobal;
-struct FPnCmd;
-struct FPnPar;
 struct FPnLang;
 struct FPnAbout;
 struct FPnCol;
@@ -14,8 +12,6 @@ struct PnBottom;
 struct UI {
 	vector<FloatPanel*> fpns;
 	ptr<FPnGlobal> fpn_global;
-	ptr<FPnCmd> fpn_cmd;
-	ptr<FPnPar> fpn_par;
 	ptr<FPnLang> fpn_lang;
 	ptr<FPnAbout> fpn_about;
 	ptr<FPnCol> fpn_col;
